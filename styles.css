@@ -1,0 +1,87 @@
+body,
+html {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --lightgrey: #f7f5f7;
+    --grey: #4b4b4c;
+    --blue: #7092c7;
+    --dark: rgb(53, 53, 53);
+}
+
+body {
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background: white;
+    width: 70%;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.device {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row-gap: 0.5rem;
+    border-radius: 6px;
+    padding: 1rem;
+    cursor: pointer;
+}
+.device:hover {
+    background-color: var(--lightgrey);
+}
+.device img {
+    width: 5rem;
+    padding-top: 2.5rem;
+}
+.device h2 {
+    color: var(--blue);
+    padding-top: 1rem;
+    margin-bottom: -0.5em;
+}
+.device p {
+    font-size: 1.05rem;
+    text-align: center;
+    color: var(--grey);
+    width: 17rem;
+}
+.price {
+    color: var(--blue);
+    display: flex;
+    padding-bottom: 2.5rem;
+    font-weight: 500;
+}
+.symbol {
+    font-size: 1rem;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+.amount {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.duration {
+    font-size: 1.2rem;
+    align-self: flex-end;
+    margin-bottom: 0.25rem;
+}
